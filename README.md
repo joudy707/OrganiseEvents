@@ -36,9 +36,8 @@ OrganiseEvents follows Laravel's MVC-oriented architecture:
 2. Laravel loads the application configuration from `bootstrap/app.php`.
 3. Web routes are defined in `routes/web.php`.
 4. Controllers and models belong in `app/Http/Controllers` and `app/Models`.
-5. Blade views are stored in `resources/views`.
-6. Database structure is managed through migrations in `database/migrations`.
-7. Frontend CSS and JavaScript are compiled from `resources/css` and `resources/js` by Vite.
+5. Database structure is managed through migrations in `database/migrations`.
+
 
 At present, the root route returns the `welcome` Blade view. No event-specific request flow has been added yet.
 
@@ -47,7 +46,6 @@ At present, the root route returns the `welcome` Blade view. No event-specific r
 - **Backend:** PHP 8.2+ and Laravel 12.
 - **Templating:** Blade.
 - **Database:** SQLite by default, with Laravel support for other database drivers.
-- **Frontend:** JavaScript, Tailwind CSS 4, and Vite 6.
 - **HTTP client:** Axios.
 - **Testing:** PHPUnit 11 and Laravel's testing tools.
 - **Dependency management:** Composer and npm.
@@ -114,11 +112,7 @@ Start the Laravel development server:
 php artisan serve
 ```
 
-For frontend development with Vite, open a second terminal and run:
 
-```bash
-npm run dev
-```
 
 The application is then available at `http://localhost:8000`.
 
